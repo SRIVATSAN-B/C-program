@@ -1,0 +1,40 @@
+PROGRAM:
+
+/*SUM OF n RANDOM NUMBERS*/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,sum;
+    printf("Enter the range: ");
+    scanf("%d",&n);
+    int num[n];
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the number: ");
+        scanf("%d",&num[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum+=num[i];
+    }
+    printf("The sum of %d numbers is %d",n,sum);
+}
+
+OUTPUT-1:
+Enter the range: 5
+Enter the number: 3
+Enter the number: 7
+Enter the number: 2
+Enter the number: 9
+Enter the number: 8
+The sum of 5 numbers is 29
+
+OUTPUT-2:
+Enter the range: 4
+Enter the number: 12
+Enter the number: 14
+Enter the number: 16
+Enter the number: 18
+The sum of 4 numbers is 60
