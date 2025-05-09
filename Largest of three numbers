@@ -1,0 +1,46 @@
+PROGRAM:
+
+/*LARGEST OF THREE NUMBERS*/
+
+#include <stdio.h>
+
+int main()
+{
+    int num1,num2,num3;
+    printf("Enter the three numbers:\n");
+    scanf("%d%d%d",&num1,&num2,&num3);
+    if(num1>num2 && num1>num3)
+    {
+        printf("%d is the greatest number",num1);
+    }
+    else if(num2>num1 && num2>num3)
+    {
+        printf("%d is the greatest number",num2);
+    }
+    else 
+    {
+        printf("%d is the greatest number",num3);
+    }
+    return 0;
+}
+
+OUTPUT-1:
+Enter the three numbers:
+78
+96
+45
+96 is the greatest number
+
+OUTPUT-2:
+Enter the three numbers:
+89
+67
+43
+89 is the greatest number
+
+OUTPUT-3:
+Enter the three numbers:
+67
+54
+92
+92 is the greatest number
