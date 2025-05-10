@@ -1,0 +1,27 @@
+PROGRAM:
+
+/* Factorial of a number*/
+
+#include <stdio.h>
+
+int main()
+{
+    int fact=1,n,i;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    for( i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    printf("The factorial of %d is %d",n,fact);
+
+    return 0;
+}
+
+OUTPUT-1:
+Enter the number:5
+The factorial of 5 is 120
+
+OUTPUT-2:
+Enter the number:8
+The factorial of 8 is 40320
