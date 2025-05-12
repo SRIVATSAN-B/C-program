@@ -1,0 +1,31 @@
+PROGRAM:
+
+/*Program to Print Alphabets From A to Z*/
+
+#include <stdio.h>
+
+int main()
+{
+    char st_alphabet, end_alphabet;
+    int i;
+    printf("Enter the Starting Alphabet:");
+    scanf("%c",&st_alphabet);
+    printf("Enter the Ending Alphabet:");
+    scanf(" %c",&end_alphabet);
+    for(i=st_alphabet;i<=end_alphabet;i++)
+    {
+        printf("%c ",i);
+    }
+
+    return 0;
+}
+
+OUTPUT-1:
+Enter the Starting Alphabet:a
+Enter the Ending Alphabet:z
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+OUTPUT-2:
+Enter the Starting Alphabet:A
+Enter the Ending Alphabet:Z
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
