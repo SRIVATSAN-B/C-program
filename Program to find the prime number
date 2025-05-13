@@ -1,0 +1,41 @@
+PROGRAM:
+
+/*Prime number or not*/
+
+#include <stdio.h>
+
+int main()
+{
+    int num,i,prime;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    for(i=2;i<num;i++)
+    {
+        if((num%i)==0)
+        {
+            prime=0;
+        }
+    }
+    if(prime==0)
+    {
+        printf("%d is not a Prime number\n",num);
+    }
+    else
+    {
+        printf("%d is a Prime number",num);
+    }
+
+    return 0;
+}
+
+OUTPUT-1:
+Enter a number:73
+73 is a Prime number
+
+OUTPUT-2:
+Enter a number:46
+46 is not a Prime number
+
+OUTPUT-3:
+Enter a number:87
+87 is not a Prime number
