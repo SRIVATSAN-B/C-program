@@ -1,0 +1,30 @@
+/* ASCII Value */
+//Conversion of integer to ASCII Value
+
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    printf("Enter a number:");
+    scanf("%d",&number);
+    
+    // typecasting into character
+    char ascii_value =(char) number;
+    printf("The ASCII Value of the %d is %c\n",number,ascii_value);
+    
+    //ASCII Value of a integer Using Format Specifier
+    printf("The ASCII Value of the %d is %c",number,number);
+    
+    return 0;
+}
+
+OUTPUT-1:
+Enter a number:65
+The ASCII Value of the 65 is A
+The ASCII Value of the 65 is A
+
+OUTPUT-2:
+Enter a number:122
+The ASCII Value of the 122 is z
+The ASCII Value of the 122 is z
