@@ -1,0 +1,29 @@
+PROGRAM:
+
+/*Leap year or not*/
+
+#include <stdio.h>
+
+int main()
+{
+    int year;
+    printf("Enter the year:");
+    scanf("%d",&year);
+    if(year%400==0 || (year%4==0 && year%100!=0))
+    {
+        printf("The year %d is a Leap year\n",year);
+    }
+    else 
+    {
+        printf("The year %d is not a Leap year\n",year);
+    }
+    return 0;
+}
+
+OUTPUT-1:
+Enter the year:2004
+The year 2004 is a Leap year
+
+OUTPUT-2:
+Enter the year:1990
+The year 1990 is not a Leap year
