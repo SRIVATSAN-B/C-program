@@ -1,0 +1,33 @@
+PROGRAM:
+
+/* C Program to Swap Two Numbers */
+
+#include <stdio.h>
+
+int main()
+{
+    int num1,num2,temp;
+    printf("Enter the numbers:\n");
+    scanf("%d%d",&num1,&num2);
+    temp=num1;
+    num1=num2;
+    num2=temp;
+    printf("The swapped numbers:\n num1=%d \n num2=%d",num1, num2);
+    return 0;
+}
+
+OUTPUT-1:
+Enter the numbers:
+23
+98
+The swapped numbers:
+ num1=98 
+ num2=23
+
+OUTPUT-2:
+Enter the numbers:
+43
+88
+The swapped numbers:
+ num1=88 
+ num2=43
